@@ -323,6 +323,18 @@ ul.flows li strong { color: var(--ink); }
 .shot__link:hover .shot__zoom, .shot__link:focus-visible .shot__zoom { opacity: 1; transform: translateY(0); }
 .shot figcaption { margin-top: 10px; font-size: .9rem; color: var(--muted); }
 
+/* ---------- Demo videos ---------- */
+.demos { margin-top: clamp(28px, 5vw, 56px); }
+.videos { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-start; }
+.video { margin: 0; }
+.video--landscape { flex: 1 1 460px; }
+.video--portrait { flex: 0 1 300px; }
+.video__frame { position: relative; overflow: hidden; border-radius: var(--radius); border: 1px solid var(--border); box-shadow: var(--shadow-md); background: #000; }
+.video--landscape .video__frame { aspect-ratio: 16 / 9; }
+.video--portrait .video__frame { aspect-ratio: 9 / 16; }
+.video__frame video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; background: #000; }
+.video figcaption { margin-top: 10px; font-size: .92rem; color: var(--muted); text-align: center; }
+
 /* ---------- Lightbox ---------- */
 .lightbox { position: fixed; inset: 0; z-index: 120; display: grid; place-items: center; }
 .lightbox[hidden] { display: none; }
