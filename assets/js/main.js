@@ -47,17 +47,18 @@
   if (nums.length) {
     var runCount = function (el) {
       var target = parseInt(el.getAttribute("data-count"), 10) || 0;
-      if (reduceMotion) { el.textContent = String(target); return; }
+      var suffix = el.getAttribute("data-suffix") || "";
+      if (reduceMotion) { el.textContent = String(target) + suffix; return; }
       var dur = 1300, start = null;
       var step = function (ts) {
         if (start === null) start = ts;
         var p = Math.min((ts - start) / dur, 1);
         var eased = 1 - Math.pow(1 - p, 3); // easeOutCubic
-        el.textContent = String(Math.round(eased * target));
+        el.textContent = String(Math.round(eased * target)) + suffix;
         if (p < 1) requestAnimationFrame(step);
-        else el.textContent = String(target);
+        else el.textContent = String(target) + suffix;
       };
-      el.textContent = "0";
+      el.textContent = "0" + suffix;
       requestAnimationFrame(step);
     };
     if (!("IntersectionObserver" in window)) {
