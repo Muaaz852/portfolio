@@ -8,7 +8,8 @@ for GitHub Pages.
 
 ```
 portfolio-site/
-├── index.html              ← landing page (hero, about, projects grid)
+├── index.html              ← landing page (hero, about, capabilities, projects, experience)
+├── renuw.html              ← project detail page
 ├── barqbooks.html          ← project detail page
 ├── impactify-world.html    ← project detail page
 ├── shoowme.html            ← project detail page
@@ -19,6 +20,7 @@ portfolio-site/
     ├── css/styles.css      ← all styling (accent color lives here)
     ├── js/main.js          ← lightbox for enlarging flow screens
     ├── favicon.svg
+    ├── Muaaz-Hamood-Resume.pdf ← your resume (linked from the nav, hero, Experience and footer)
     └── projects/<name>/    ← flow screenshots, web-safe filenames
 ```
 
@@ -73,6 +75,16 @@ grep -rl 'linkedin.com/in/muaaz-hamood' . --include='*.html' \
 ```
 
 (On Linux, use `sed -i` without the `''` after it.)
+
+## Update your resume
+
+The resume lives at `assets/Muaaz-Hamood-Resume.pdf`. To update it, replace that
+file with your new PDF and **keep the same file name** — every Resume link on the
+site (nav, hero, Experience section, footer) points to it, so nothing else needs
+to change.
+
+The **Experience** section on `index.html` (`id="experience"`) summarizes the same
+roles. If your roles change, edit the matching `<li class="role">` entries there.
 
 ## Preview locally
 
