@@ -1,92 +1,55 @@
-# Portfolio website
+# Muaaz Hamood
 
-A clean, responsive personal portfolio built with plain HTML, CSS, and vanilla
-JavaScript. No build step, no framework — it runs as static files and is ready
-for GitHub Pages.
+**Senior Software Engineer · Full stack & AI-enabled**
 
-## Folder contents
+I'm a senior software engineer with 8+ years of experience building full-stack web, mobile and SaaS products, from the database and API to the interface people actually use. I work mostly with C# / .NET, Angular, React and Node.js on Azure and AWS, and lately I've been shipping AI features: an agentic tool-calling assistant on Azure OpenAI and a RAG support chatbot. I work remotely with teams in the US, Denmark and the UK, and I've shipped 20+ projects across web and mobile.
 
-```
-portfolio-site/
-├── index.html              ← landing page (hero, about, capabilities, projects, experience)
-├── renuw.html              ← project detail page
-├── barqbooks.html          ← project detail page
-├── impactify-world.html    ← project detail page
-├── shoowme.html            ← project detail page
-├── taxi-management.html    ← project detail page
-├── .nojekyll               ← tells GitHub Pages to serve every folder as-is
-├── README.md
-└── assets/
-    ├── css/styles.css      ← all styling (accent color lives here)
-    ├── js/main.js          ← lightbox for enlarging flow screens
-    ├── favicon.svg
-    ├── Muaaz-Hamood-Resume.pdf ← your resume (linked from the nav, hero, Experience and footer)
-    └── projects/<name>/    ← flow screenshots, web-safe filenames
-```
+[![Live portfolio](https://img.shields.io/badge/Live_portfolio-4f46e5?style=for-the-badge)](https://muaaz852.github.io/portfolio/)
+[![Download resume](https://img.shields.io/badge/Download_resume-0e1018?style=for-the-badge)](https://muaaz852.github.io/portfolio/assets/Muaaz-Hamood-Resume.pdf)
+[![Book a call](https://img.shields.io/badge/Book_a_call-006bff?style=for-the-badge)](https://calendly.com/muaaz-hamood-barqbytes)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0a66c2?style=for-the-badge)](https://www.linkedin.com/in/muaaz-hamood/)
 
-## Publish on GitHub Pages
+[![Portfolio home page](.github/preview.jpg)](https://muaaz852.github.io/portfolio/)
 
-1. Create a repository on your personal GitHub account and push these files so
-   that **`index.html` sits at the repository root**. (If you keep them inside a
-   `portfolio-site/` folder, move the contents up to the root, or push the
-   contents of this folder as the repo root.)
-2. On GitHub, open **Settings → Pages**.
-3. Under **Build and deployment**, set **Source** to **Deploy from a branch**.
-4. Choose branch **`main`** and folder **`/ (root)`**, then click **Save**.
-5. Wait a minute, then visit the URL GitHub shows
-   (`https://<your-username>.github.io/<repo-name>/`).
+## Selected work
 
-All links and asset paths are **relative**, so the site works whether it's served
-from a user site (`<username>.github.io`) or a project subpath
-(`<username>.github.io/<repo-name>/`).
+Each project has a case study with flow screenshots on the [live site](https://muaaz852.github.io/portfolio/#work).
 
-## Change the accent color (one place)
+| Project | What it is | Built with | Code |
+|---|---|---|---|
+| [**Renuw**](https://muaaz852.github.io/portfolio/renuw.html) | Dual-portal renewable-energy platform: corporates trace their green power to its source assets, utilities allocate Guarantees of Origin | React, TypeScript, Mapbox GL, Recharts, TanStack Query | [Frontend](https://github.com/Muaaz852/renuw-corporate-frontend) · [Backend](https://github.com/Muaaz852/renuw-backend) |
+| [**BarqBooks**](https://muaaz852.github.io/portfolio/barqbooks.html) | Accounting platform that brings invoices, bills, customers, vendors and bookkeeping into one dashboard | Next.js, NestJS, PostgreSQL, TypeScript | [Frontend](https://github.com/Muaaz852/barqbooks-frontend) · [Backend](https://github.com/Muaaz852/barqbooks-backend) |
+| [**Impactify World**](https://muaaz852.github.io/portfolio/impactify-world.html) | Crypto-donation platform that lets NGOs accept Bitcoin and Ethereum through an embeddable, compliance-ready checkout widget | Vue.js, Quasar, NestJS, MySQL, Prisma, Coinify API | Private |
+| [**ShoowMe**](https://muaaz852.github.io/portfolio/shoowme.html) | Live-commerce marketplace where sellers sell on camera and buyers chat and check out without leaving the stream | React, Express.js, Socket.IO, ZegoCloud | [Frontend](https://github.com/Muaaz852/shoowme) · [Backend](https://github.com/Muaaz852/shoowme-backend) |
+| [**Taxi Management**](https://muaaz852.github.io/portfolio/taxi-management.html) | Offline-first fleet system: a driver app for shifts, rides and payments, plus an admin panel for real-time oversight | React Native, Expo, WatermelonDB, NestJS, MongoDB | [Mobile](https://github.com/Muaaz852/taxi-management-mobile) · [Frontend](https://github.com/Muaaz852/taxi-management-frontend) · [Backend](https://github.com/Muaaz852/taxi-management-backend) |
 
-Open `assets/css/styles.css` and edit the first variable:
+## Experience
 
-```css
-:root {
-  --accent: #4f46e5;   /* ← change this hex value */
-}
-```
+**Senior Software Engineer** · MX Data, retail order-management SaaS (New York, remote) · *Feb 2025 – Sep 2026*\
+Built an agentic LLM assistant on Azure OpenAI that answers warehouse and customer-service questions about live orders. Led the AngularJS → Angular 21 rewrite of the fulfillment app (11 feature modules, 550 automated tests), cut Shopify API calls per order cycle by 70% with GraphQL batching, and moved CI/CD to Azure DevOps.
 
-Every accent on the site (buttons, links, highlights, the brand dot) is derived
-from this one value, so changing it updates the whole site.
+**Full Stack Developer** · The Language Doctors, translation services (Maryland, remote) · *Dec 2022 – Jan 2025*\
+Led a three-developer rebuild of the company-wide workflow app from ASP.NET MVC and jQuery to ASP.NET Core and Angular. Built real-time chat with SignalR, WebRTC audio and video calling, and PII redaction for the translation workflow.
 
-## Change the two links (Calendly + LinkedIn)
+**Full-Stack Software Engineer (Freelance)** · Remote · *Sep 2018 – Jan 2025*\
+Built the products above, plus real-time platforms for freight and load management and UK workplace-safety wearables. Deployed client apps on AWS with Docker and CI/CD.
 
-The **Book a call** button points to your Calendly link, and the **LinkedIn**
-button points to your profile. They appear in the header and footer of every
-page. To update them, find-and-replace the URLs across the `.html` files:
+**Full-Stack Developer** · HISDU, Government of Punjab · *Jan 2020 – Jan 2022*\
+Delivered four province-level public-health systems (medicine inventory, polio monitoring, TB control and COVID vaccination) on ASP.NET Core, Angular and SQL Server.
 
-- Calendly — current value: `https://calendly.com/muaaz-hamood-barqbytes`
-- LinkedIn — current value: `https://www.linkedin.com/in/muaaz-hamood/`
+## Tech stack
 
-On macOS/Linux you can do both from a terminal in this folder:
+- **Backend:** C#, .NET 8, ASP.NET Core, Entity Framework Core, Node.js, NestJS, Express.js, GraphQL, RabbitMQ, SignalR, Socket.IO
+- **Frontend:** Angular, React, Next.js, Vue.js, TypeScript, Tailwind CSS, PrimeNG, Angular Material
+- **Mobile:** React Native, Expo, Flutter, offline-first sync
+- **AI & LLM:** Azure OpenAI / AI Foundry, OpenAI, Claude and Gemini APIs, agentic tool calling, RAG, Qdrant, pgvector
+- **Cloud & DevOps:** Azure, AWS, Docker, Nginx, IIS, Azure DevOps, GitHub Actions, GitLab CI, Jenkins
+- **Data:** SQL Server, PostgreSQL, MySQL / MariaDB, MongoDB, Redis, Prisma, TypeORM
 
-```bash
-# replace the Calendly link everywhere
-grep -rl 'calendly.com/muaaz-hamood-barqbytes' . --include='*.html' \
-  | xargs sed -i '' 's#https://calendly.com/muaaz-hamood-barqbytes#YOUR_NEW_CALENDLY_URL#g'
+## Get in touch
 
-# replace the LinkedIn link everywhere
-grep -rl 'linkedin.com/in/muaaz-hamood' . --include='*.html' \
-  | xargs sed -i '' 's#https://www.linkedin.com/in/muaaz-hamood/#YOUR_NEW_LINKEDIN_URL#g'
-```
+I'm available for new projects. [Book a call](https://calendly.com/muaaz-hamood-barqbytes), connect on [LinkedIn](https://www.linkedin.com/in/muaaz-hamood/), or see the full details in my [resume](https://muaaz852.github.io/portfolio/assets/Muaaz-Hamood-Resume.pdf).
 
-(On Linux, use `sed -i` without the `''` after it.)
+---
 
-## Update your resume
-
-The resume lives at `assets/Muaaz-Hamood-Resume.pdf`. To update it, replace that
-file with your new PDF and **keep the same file name** — every Resume link on the
-site (nav, hero, Experience section, footer) points to it, so nothing else needs
-to change.
-
-The **Experience** section on `index.html` (`id="experience"`) summarizes the same
-roles. If your roles change, edit the matching `<li class="role">` entries there.
-
-## Preview locally
-
-Just open `index.html` in a browser. Everything — images, links, and the
-lightbox — works directly from the file system.
+This repository holds the source of [muaaz852.github.io/portfolio](https://muaaz852.github.io/portfolio/). © 2026 Muaaz Hamood. All rights reserved.
